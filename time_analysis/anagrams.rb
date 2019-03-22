@@ -1,4 +1,4 @@
-def first_anagram?(string1, string2)     # Space and time complexity are n
+def first_anagram?(string1, string2)     # Space and time complexity are n!
   arr1 = string1.split('')
   all_words = arr1.permutation.to_a
   all_words.map { |word| word.join('') }
